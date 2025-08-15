@@ -6,3 +6,16 @@ echo \
 sudo apt-get update
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+
+
+# github: https://github.com/docker/compose/releases/tag/v2.20.2 
+# 国内下载地址：https://gitee.com/smilezgy/compose/releases/tag/v2.20.2
+sudo curl -SL \
+https://github.com/docker/compose/releases/download/v2.20.2/docker-compose-linux-x86_64 \
+-o /usr/local/bin/docker-compose
+ 
+# 或者手动下载, 上传到服务器后执行如下指令(use)
+# 在 docker-compose-linux-x86_64 文件同一目录下执行
+sudo cp docker-compose-linux-x86_64 /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
